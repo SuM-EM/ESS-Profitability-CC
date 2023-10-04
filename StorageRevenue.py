@@ -114,7 +114,7 @@ model.addLConstr(
 # Import the timeseries data for LMP
 import pandas as pd
 
-df_Site = pd.read_csv('SIL_SILAS_10_3.csv')
+df_Site = pd.read_csv('WRSBES_BESS1_2020_1.csv')
 df_Site = df_Site.drop(columns=['Time'])
 df_Site.fillna(0, inplace=True)
 avl_col = df_Site.shape[1]
